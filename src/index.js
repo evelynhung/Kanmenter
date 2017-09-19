@@ -12,6 +12,7 @@ class APIHelper {
     });
   }
   static post() {
+
   }
 }
 
@@ -80,7 +81,7 @@ class CommentForm extends Inferno.Component {
     this.placeholderMessage = "Type Comment Here (at least 3 chars)";
   }
   handleClick(evt) {
-    this.setState({display: true});
+    this.setState({display: !this.state.display});
   }
   handleSubmit() {
   }
@@ -92,6 +93,7 @@ class CommentForm extends Inferno.Component {
     }
     return (
         <form class="reply" data-parent={this.props.parentId} onSubmit={this.handleSubmit}>
+          <a href="#" class="close" onClick={this.handleClick}>Close</a>
           <textarea class="textarea" placeholder={this.placeholderMessage}>
           </textarea>
           <input type="text" placeholder="name(optional)" class="name" />

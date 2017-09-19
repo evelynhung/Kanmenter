@@ -47,12 +47,17 @@
 .comment form.reply {
   grid-area: reply;
   display: grid;
-  grid-template-areas: "textarea textarea textarea textarea"
+  grid-template-areas: "close close close close"
+                       "textarea textarea textarea textarea"
                        "name email website submit";
   grid-template-columns: repeat(3, 1fr) max-content;
-  grid-template-rows: auto 30px;
-  grid-gap: 5px;
+  grid-template-rows: 30px auto 30px;
   width: 520px;
+}
+.comment .reply a.close {
+  grid-area: close;
+  color: red;
+  font-weight: bold;
 }
 .comment .reply .textarea {
   grid-area: textarea;
@@ -62,6 +67,7 @@
   padding: 5px;
   width: 100%;
   height: 100px;
+  box-sizing: border-box;
 }
 .comment .reply .name {
   grid-area: name;
