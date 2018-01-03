@@ -1,0 +1,22 @@
+{
+  "comments": [
+    {
+      "id": 1,
+      "author": "Mery",
+      "time": "7 years ago",
+      "content": "This is a test. This is a test.This is a test.This is a test.This is a test.This is a test."
+    },
+    {
+      "id": 2,
+      "author": "Mery",
+      "time": "7 years ago",
+      "content": "This is a test. This is a test.This is a test.This is a test.This is a test.This is a test."
+    },
+    {
+      "id": 3,
+      "author": "John",
+      "time": "7 years ago",
+      "content": "I'm fatty!"
+    }
+  ]
+}
